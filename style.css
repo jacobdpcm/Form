@@ -4,6 +4,57 @@ body {
     overflow: hidden;
     font-family: Roboto, sans-serif;
     color: black;
-    align-items: center;
+    display: flex;
     overflow-y: auto;
+}
+
+.background {
+    flex: 1;
+    background-color: rgb(103, 197, 103);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.info>div {
+    flex: 1;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+.intro {
+    background-color: rgb(247, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    font-size: 16pt;
+}
+
+.intro>div {
+    max-width: 800px;
+}
+
+form>h1 {
+    margin-bottom: .5rem;
+}
+
+form>div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+form>div>div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+label, input[type='text'] {
+    width: 15rem;
 }
