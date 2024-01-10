@@ -1,3 +1,7 @@
+:root {
+    --gray-color: rgb(247, 245, 245);
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -8,9 +12,32 @@ body {
     overflow-y: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 .background {
-    flex: 1;
-    background-color: rgb(103, 197, 103);
+    position: relative;
+    flex: 1.5;
+    background-image: url(hollowknight.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    height: 10rem;
+    font-size: 90pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #596d488e;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 8rem;
 }
 
 .info {
@@ -26,7 +53,7 @@ body {
 }
 
 .intro {
-    background-color: rgb(247, 245, 245);
+    background-color: var(--gray-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -36,6 +63,11 @@ body {
 
 .intro>div {
     max-width: 800px;
+}
+
+.form {
+    box-shadow:  0 2px 10px rgb(190, 189, 189);
+    padding-bottom: 1rem;
 }
 
 form>h1 {
@@ -51,10 +83,41 @@ form>div {
 form>div>div {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: .5rem;
     padding-left: 0;
 }
 
 label, input[type='text'] {
     width: 15rem;
+    height: 1.3rem;
+}
+
+input[type='text'] {
+    opacity: .5;
+}
+
+.create {
+    margin-top: 8px;
+    padding: 1.3rem;
+    background-color: var(--gray-color);
+}
+
+.create button {
+    width: 13rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    font-size: 13pt;
+}
+
+.create .already {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.already a {
+    color: #667d52;
+    font-weight: 700;
 }
