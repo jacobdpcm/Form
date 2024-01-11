@@ -24,37 +24,37 @@
           <div class="name">
             <div class="first">
               <label for="first">First Name</label>
-              <input type="text" id="first" name="first">
+              <input type="text" id="first" name="first" required>
             </div>
             <div class="last">
               <label for="last">Last Name</label>
-              <input type="text" id="last" name="last">
+              <input type="text" id="last" name="last" required>
             </div>
           </div>
           <div class="contact">
             <div class="email">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
             <div class="phone">
               <label for="phone">Phone Number</label>
-              <input type="number" id="phone" name="phone">
+              <input type="number" id="phone" name="phone" min="1000000000" max="9999999999" required>
             </div>
           </div>
           <div class="pass">
             <div class="password">
               <label for="password">Password</label>
-              <input type="text" id="password" name="password">
+              <input type="password" id="password" name="password" required>
             </div>
             <div class="confpassword">
               <label for="confpassword">Confirm password</label>
-              <input type="text" id="confpassword" name="confpassword">
+              <input type="password" id="confpassword" name="confpassword" required>
             </div>
           </div>
         </form>
       </div>
       <div class="create">
-        <button form="theForm">Create Account</button>
+        <button form="theForm" type="submit">Create Account</button>
         <div class="already">Already have an account? <a href="">Log in</a></div>
       </div>
     </div>

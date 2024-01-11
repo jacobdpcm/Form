@@ -87,13 +87,18 @@ form>div>div {
     padding-left: 0;
 }
 
-label, input[type='text'] {
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'] {
     width: 15rem;
     height: 1.3rem;
+    opacity: .5;
 }
 
-input[type='text'] {
-    opacity: .5;
+label {
+    width: 15rem;
+    height: 1.3rem;
 }
 
 .create {
